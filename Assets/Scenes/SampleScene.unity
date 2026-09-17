@@ -260,6 +260,8 @@ GameObject:
   - component: {fileID: 577251420}
   - component: {fileID: 577251419}
   - component: {fileID: 577251424}
+  - component: {fileID: 577251426}
+  - component: {fileID: 577251425}
   m_Layer: 0
   m_Name: XR Origin (Mobile AR)
   m_TagString: Untagged
@@ -359,6 +361,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaceObjectOnPlane
   objectToPlace: {fileID: 7252577438957218578, guid: 1b4780ecb627b8243ab6e76e1c3ea353, type: 3}
+--- !u!114 &577251425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577251418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d775bb3039bbf0419162dbd5b4fa359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ImageTargetHandler
+  infoPrefab: {fileID: 7252577438957218578, guid: 1b4780ecb627b8243ab6e76e1c3ea353, type: 3}
+--- !u!114 &577251426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577251418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARTrackedImageManager
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SerializedLibrary: {fileID: 11400000, guid: bb834c66c11c97140a04f6f9bc75dc5d, type: 2}
+  m_MaxNumberOfMovingImages: 0
+  m_TrackedImagePrefab: {fileID: 0}
 --- !u!1 &803915380
 GameObject:
   m_ObjectHideFlags: 0
